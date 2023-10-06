@@ -68,7 +68,8 @@ async function onButtonClick() {
 
         console.log('Requesting Bluetooth Device...');
         console.log('with ' + JSON.stringify(options));
-        window.device = await navigator.bluetooth.requestDevice(options);
+        let device = await navigator.bluetooth.requestDevice(options);
+        window.device = device;
 
         console.log('> Name:             ' + device.name);
         console.log('> Id:               ' + device.id);
