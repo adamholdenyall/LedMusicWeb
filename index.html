@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home page - LedMusic</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c" />
+    <link rel="stylesheet" href="/LedMusic.styles.css?v=9E_NND8-jTFQAg0YqPMKI4c3K-HrWaqElzgU68RjWg0" />
+</head>
+<body>
+    <header>
+        <nav b-8b8pvg8mnz class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div b-8b8pvg8mnz class="container">
+                <a class="navbar-brand" href="/">LedMusic</a>
+                <button b-8b8pvg8mnz class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span b-8b8pvg8mnz class="navbar-toggler-icon"></span>
+                </button>
+                <div b-8b8pvg8mnz class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul b-8b8pvg8mnz class="navbar-nav flex-grow-1">
+                        <li b-8b8pvg8mnz class="nav-item">
+                            <a class="nav-link text-dark" href="/">Home</a>
+                        </li>
+                        <li b-8b8pvg8mnz class="nav-item">
+                            <a class="nav-link text-dark" href="/Privacy">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div b-8b8pvg8mnz class="container">
+        <main b-8b8pvg8mnz role="main" class="pb-3">
+            <div class="text-center">
+    <input type="file" accept=".zip"/>
+    <button onclick="onButtonClick()">Connect</button>
+    <button onclick="onDisconnectClick()">Disconnect</button>
+    <button onclick="pingButtonPressed()">Ping</button>
+    <button onclick="serialButtonPressed()">Connect Serial</button>
+    <input type="number" id="offset_time"/>
+    <button onclick="stopAudio()">Stop</button>
+</div>
+<div class="text-center">
+    <form onsubmit="fireCommand();return false">
+        <input type="text" id="command_entry" style="width:100%" />
+    </form>
+</div>
+<div id="song_infos" class="text-center">
+    
+</div>
+<div style="width:500px;height:500px;overflow:hidden">
+    <canvas width="50" height="50" style="image-rendering:pixelated;zoom:50"></canvas>
+</div>
+        </main>
+    </div>
+
+    <footer b-8b8pvg8mnz class="border-top footer text-muted">
+        <div b-8b8pvg8mnz class="container">
+            &copy; 2023 - LedMusic - <a href="/Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/lib/jszip.js"></script>
+    <script src="/lib/d3.v7.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/site.js?v=PpGXZTf8gcVu0BQ2JeM-7ijpDXWIZ0Inys4nFVO4i_o"></script>
+</html>
